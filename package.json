@@ -1,0 +1,28 @@
+{
+  "name": "no1chat",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build  &&  electron-builder",
+    "preview": "vite preview"
+  },
+  "build": {
+    "extends": "electron-builder.config.json"
+  },
+  "dependencies": {
+    "pinia": "^2.1.4",
+    "sql.js": "^1.8.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "unplugin-auto-import": "^0.16.4",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.2",
+    "vite-plugin-electron": "^0.12.0"
+  }
+}
